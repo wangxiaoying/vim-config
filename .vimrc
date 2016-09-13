@@ -53,3 +53,16 @@ call append(line(".")+3, " *")
 call append(line(".")+4, " * Created on: ".strftime("%Y-%m-%d %H:%M:%S"))
 call append(line(".")+5, " */")
 endfunc
+
+" CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-o>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrp_working_path_mode = 0
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrl_custom_ignore = {
+  \ 'dir': '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': '',
+  \ }
+let g:ctrlp_user_command = 'find %s -type f'
