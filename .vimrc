@@ -144,3 +144,6 @@ set completeopt-=preview
 
 " NeoComplete ================================================
 
+" Tagbar
+" need to install exuberant-ctags first
+map <F8> :TagbarToggle<CR>
