@@ -66,3 +66,12 @@ let g:ctrl_custom_ignore = {
   \ 'link': '',
   \ }
 let g:ctrlp_user_command = 'find %s -type f'
+
+" NerdCommenter
+filetype plugin on
+let mapleader = ';'
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NeradCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
