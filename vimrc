@@ -135,3 +135,5 @@ let g:ycm_enable_diagnostic_highlighting = 1     " Highlight regions of diagnost
 let g:ycm_echo_current_diagnostic = 1            " Echo line's diagnostic that cursor is on
 set signcolumn=yes                               " Make Vim always render the sign column
 
+" Jump to definition or declaration
+nnoremap <C-g> :YcmCompleter GoToDefinitionElseDeclaration<CR>
